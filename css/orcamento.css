@@ -1,0 +1,182 @@
+.form input[type="checkbox"]{
+    display: inline-block;
+    padding: 50px;
+    background-color: #f7f7f7;
+}
+
+ul{
+    list-style: none;
+    color: #909090;
+}
+
+.formulario .beforar{
+    font-size: 12px;
+    position: relative;
+}
+
+.formulario .beforar::before{
+    content: "";
+    display: inline-block;
+    background-color: #ffb60d;
+    width: 6px;
+    height: 8px;
+    position: absolute;
+    top: 2px;
+    left: -14px;
+}
+
+.orcamento-produto h2{
+    position: relative;
+    color: #b2b2b2;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.orcamento-produto h2::before{
+    content: "";
+    display: inline-block;
+    background-color: #ffb60d;
+    width: 6px;
+    height: 8px;
+    position: absolute;
+    top: 10px;
+    left: -14px;
+}
+
+.orcamento-produto{
+    background-color: black;
+    padding: 60px;
+    color: #b2b2b2;
+}
+
+.orcamento-produto label:hover{
+    background-color: #909090;
+}
+
+.orcamento-produto input:focus + label{
+    box-shadow: 0 0 0 2px #ffb60d;
+    border: 1px solid black;
+}
+
+.gridar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 20px;
+}
+
+.gridar > *{
+    grid-column: 1 / -1;
+}
+
+.gridar > label{
+    grid-column: initial;
+}
+
+.impo{
+    grid-column: initial;
+    color: #ccc;
+    background-color: #2e2e2e;
+    display: block;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font: 600 1rem/1.5 "Poppins";
+    cursor: pointer;
+}
+
+.gridar input:checked + label{
+    background-color: white;
+    color: #111;
+}
+
+.orcamento-produto label{
+    color: #ccc;
+    background-color: #2e2e2e;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font: 400 1rem/1.5 "Poppins";
+    cursor: pointer;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.orcamento-produto label::before{
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #9c9c9c;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.orcamento-produto input:checked + label::before{
+    border-color: #717171;
+    box-shadow: inset 0 0 0 3px white, inset 0 0 0 6px #717171;
+}
+
+.orcamento-conteudo{
+    display: none;
+}
+
+.orcamento-conteudo input:checked + label{
+    background-color: white;
+    color: #111;
+}
+
+#bikcraft:checked ~ #orcamento-bikcraft, #seguro:checked ~ #orcamento-seguro{
+    display: block;
+}
+
+.orcamento-produto input{
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.orcamento-produto label span{
+    display: none;
+}
+
+.orcamento-produto input:checked + label span{
+    display: inline-block;
+}
+
+.orcamento-conteudo h3{
+    margin-top: 20px;
+}
+
+.orcamento-detalhe{
+    background-color: white;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 4px;
+    align-items: center;
+    display: none;
+    margin-bottom: 20px;
+}
+
+.orcamento-detalhe li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.orcamento-detalhe li img{
+    width: 16px;
+    margin-right: 8px;
+}
+
+.orcamento-produto input:checked + label + .orcamento-detalhe{
+    display: grid;
+}
+
+@media (max-width: 1200px){
+    .orcamento-produto, .formulario{
+        padding: 32px;
+    }
+}

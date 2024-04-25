@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
+}
+h1,p,ul,span{
+    margin: 0px;
+    padding: 0px;
+}
+
+span{
+    font-family: "Roboto", sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+header ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: black;
+}
+
+header .conteiner{
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1160px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 16px 0px;
+    color: white;
+    font-size: 18px;
+}
+
+header nav ul{
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.introducao{
+    padding: 30px 150px;
+    margin: 0 auto;
+    background-color: #111111;
+}
+
+.introducao span{
+    color: #b2b2b2;
+    font-family: "Poppins";
+}
+
+.introducao .ponto{
+    color: #ffbb00;
+}
+
+.introducao h2{
+    margin-top: 6px;
+    color: white;
+    font-size: 42px;
+    margin-bottom: 0px;
+}
+
+.principal{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    padding: 60px 0px;
+    margin: 0 auto;
+}
+
+.principal-conteudo h3{
+    grid-column: 2;
+    font-size: 25px;
+    position: relative;
+}
+
+
+.principal-conteudo h3::before{
+    content: "";
+    display: inline-block;
+    background-color: #ffb60d;
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    top: -10px;
+}
+
+.principal:hover h3::before{
+    width: 24px;
+    transition: width 0.2s;
+}
+
+.principal-conteudo p{
+    grid-column: 2;
+    margin-bottom: 30px;
+    color: #595959;
+}
+
+.principal-conteudo .icones{
+    grid-column: 2;
+    color: #595959;
+}
+
+.bike{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    grid-column: 1;
+}
+
+.principal a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: linear-gradient(#ffbf00,#f2a50c);
+    padding: 12px 24px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,1);
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: bold;
+}
+
+.principal-conteudo .second{
+    background-color: #111111;
+}
+
+.link{
+    text-align: end;
+}
+
+.icones{
+    display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.icones ul{
+    list-style: none;
+}
+.icones li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.principal:nth-child(even){
+    background-image: linear-gradient(to right, white 10%, #111 0%);
+    padding-right: 20px;
+    border-radius: 4px;
+}
+
+.principal:nth-child(even) h3{
+    color: white;
+}
+
+.footer-conteiner{
+    display: grid;
+    grid-template-columns: 3fr 5fr 4fr;
+    gap: 40px;
+    background-color: black;
+    padding: 60px 0px;
+}
+
+footer ul{
+    list-style: none;
+    color: #b2b2b2;
+    line-height: 2.25;
+}
+
+.footer-conteiner li{
+    margin-bottom: 16px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+footer a:hover{
+    color: white;
+}
+
+footer h3{
+    color: white;
+    margin-bottom: 32px;
+}
+
+footer .contato-lista li:nth-child(even){
+    border-bottom: 1px solid #595959;
+    max-width: 360px;
+}
+
+.contato{
+    max-width: 400px;
+}
+
+.logos{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.informacoes{
+    grid-column: 3;
+}
+
+@media (max-width:800px){
+    .principal{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 40px 0px;
+    }
+
+    header nav a{
+        background-color: #404040;
+        padding: 10px 14px;
+        border-radius: 4px;
+    }
+
+    .principal:nth-child(even){
+        background-image: none;
+        background-color: #111111;
+    }
+
+}

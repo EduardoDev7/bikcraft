@@ -1,0 +1,220 @@
+img{
+    border-radius: 4px;
+}
+
+.respostas-bg{
+    background-color: #111111;
+}
+
+.respostas{
+    max-width: 1200px;
+    padding: 60px 0px;
+    margin: 0 auto;
+}
+
+.respostas h2{
+    margin-top: 6px;
+    color: white;
+    font-size: 42px;
+    margin-bottom: 0px;
+}
+
+.respostas span{
+    color: #b2b2b2;
+    font-family: "Poppins";
+    font-size: 20px;
+}
+.respostas .ponto{
+    color: #fb0;
+    font-size: 40px;
+}
+
+.loja-bg{
+    background-color: #f7f7f7;
+}
+
+.loja{
+    max-width: 1200px;
+    padding: 60px 0px;
+    margin: 0 auto;
+}
+
+.loja h2{
+    font-size: 42px;
+}
+
+.loja-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.endereco{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 14px;
+}
+
+.end-nome{
+    border-left: 1px solid #ededed;
+    padding: 8px;
+}
+
+.loja-grid .sp{
+    margin-left: 24px;
+    position: relative;
+}
+
+.loja-grid .sp::before{
+    content: "";
+    display: inline-block;
+    background-color: #ffb60d;
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    top: 10px;
+    left: -19px;
+}
+
+.loja-grid .rj{
+    margin-left: 24px;
+    position: relative;
+}
+
+.loja-grid .rj::before{
+    content: "";
+    display: inline-block;
+    background-color: #ffb60d;
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    top: 10px;
+    left: -19px;
+}
+
+.horario{
+    display: flex;
+    margin-top: 25px;
+}
+
+.horario span{
+    margin-left: 8px;
+}
+
+.formulario-bg{
+    background-image: linear-gradient(#111111 50%, #f7f7f7 0%);
+}
+
+.formulario-caixa{
+    max-width: 1200px;
+    padding: 60px 0px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    
+}
+
+.flexizar{
+    display: flex;
+}
+
+.formulario-conteudo{
+    background-color: black;
+    color: #b2b2b2;
+    padding: 40px;
+}
+
+.formulario{
+    background-color: white;
+    padding: 80px 60px;
+}
+
+.formulario-conteudo h4{
+    color: #ededed;
+    margin-bottom: 50px;
+}
+
+.espaco{
+    margin-bottom: 40px;
+}
+
+.redes{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 60px;
+    margin-top: 150px;
+}
+
+.leftizar{
+    margin-left: 30px;
+}
+
+.blockz{
+    display: block;
+    margin-left: 30px;
+}
+
+.leftz{
+    margin-left: 10px;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form label{
+    display: block;
+    font: 400 1rem/1.5 "Poppins";
+    margin-bottom: 4px;
+}
+
+.form input[type="text"], .form input[type="email"], .form textarea, .form select{
+    font: 400 1rem/1.5 "Roboto";
+    background: #f7f7f7;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form input[type="text"]:focus, .form input[type="email"]:focus, .form textarea:focus , .form select{
+    outline: none;
+    border-color: #fb0;
+    background: white;
+    box-shadow: 0 0 0 2px #fea;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+.formulario a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background: linear-gradient(#ffbf00,#f2a50c);
+    padding: 12px 24px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,1);
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.formulario a:hover{
+    background: linear-gradient(#ffb60d,#e59317);
+}
+
+@media (max-width: 800px){
+    .formulario-caixa{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,72 @@
+.escolher{
+    color: #b2b2b2;
+    margin-bottom: 0px;
+}
+
+.titulo{
+    margin-top: 0px;
+}
+
+.vantagens-bg{
+    background-color: black;
+}
+
+.vantagens{
+    max-width: 1200px;
+    padding: 60px 0px;
+    margin: 0 auto;
+}
+
+.vantagens h2{
+    font-size: 45px;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.content h3{
+    color: white;
+}
+
+.content p{
+    color: #b2b2b2;
+}
+
+.perguntas{
+    max-width: 1200px;
+    padding: 60px 0px;
+    margin: 0 auto;
+}
+
+.perguntas h2{
+    font-size: 45px;
+}
+.perguntinha{
+    margin-bottom: 20px;
+}
+
+.perguntinha dt{
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+
+.perguntinha dt::before{
+    content: "";
+    display: inline-block;
+    background-color: #ffb60d;
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+}
+
+.perguntinha dd{
+    color: #2e2e2e;
+}

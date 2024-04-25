@@ -1,0 +1,198 @@
+img{
+    max-width: 100%;
+}
+h4{
+    padding: 0px;
+    margin: 0px;
+}
+
+.info-content{
+    max-width: 1200px;
+    padding: 60px 0px 30px 0px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.info-textos p{
+    color: #c9c9c9;
+    margin-bottom: 32px;
+    margin-top: 15px;
+}
+
+.informacoe{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    background-color: black;
+    padding: 40px 80px;
+    border-radius: 4px;
+}
+
+.informacoe h3{
+    color: white;
+}
+
+.info-textos .title{
+    color: #b2b2b2;
+    font-size: 14px;
+    font-family: "Roboto";
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.info-textos a{
+    display: inline-block;
+    text-decoration: none;
+    color: #320;
+    background: linear-gradient(#ffbf00,#f2a50c);
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,1);
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.info-textos a:hover{
+    background: linear-gradient(#ffb60d,#e59317);
+}
+
+.info-imagens{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.info-imagens img{
+    flex: 1;
+    min-width: 200px;
+}
+
+.info-imagens img:first-child{
+    min-width: 100%;
+}
+
+.info-imagens img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.comprar{
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    justify-items: start;
+    gap: 8px 12px;
+}
+
+.comprar a{
+    grid-row: span 2;
+}
+
+.ficha{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    padding: 40px 25px;
+    border-radius: 4px;
+    
+}
+
+.ficha span{
+    display: inline-block;
+    color: #b2b2b2;
+    font-size: 14px;
+    font-family: "Roboto";
+    text-align: end;
+    margin-bottom: 14px;
+    border-bottom: 0.5px solid #111111;
+}
+
+.ficha h4{
+    color: #b2b2b2;
+    font-size: 16px;
+    font-family: "Roboto";
+    text-align: start;
+    margin-bottom: 14px;
+    border-bottom: 0.5px solid #111111;
+}
+
+.slide{
+    max-width: 1200px;
+}
+
+.comprar .entre{
+    display: flex;
+    align-items: center;
+    color: #b2b2b2;
+    background-color: black;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 18px;
+    gap: 8px;
+}
+
+.dado p{
+    margin: 0px;
+}
+
+.dado img{
+    width: 24px;
+}
+
+.seguros-bg{
+    background-image: linear-gradient(#111 80% , black 0%);
+    box-shadow: inset 0 130px white;
+}
+
+.seguranca{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    padding: 80px 0px;
+    margin: 0 auto;
+}
+
+.seguranca img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.seguranca h2{
+    color: white;
+    font-size: 62px;
+}
+
+.seguranca p{
+    color: #b2b2b2;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.seguranca a{
+    display: inline-block;
+    text-decoration: none;
+    color: #320;
+    background: linear-gradient(#ffbf00,#f2a50c);
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,1);
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 1.33;
+    font-weight: bold;
+}
+
+.seguranca a:hover{
+    background: linear-gradient(#ffb60d,#e59317);
+}
+
