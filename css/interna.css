@@ -6,6 +6,11 @@ h4{
     margin: 0px;
 }
 
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
 .info-content{
     max-width: 1200px;
     padding: 60px 0px 30px 0px;

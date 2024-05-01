@@ -37,6 +37,7 @@
     color: #b2b2b2;
 }
 
+
 .perguntas{
     max-width: 1200px;
     padding: 60px 0px;
@@ -48,15 +49,38 @@
 }
 .perguntinha{
     margin-bottom: 20px;
+    padding: 16px;
+}
+
+.perguntinha dd{
+    display: none;
+}
+
+.perguntinha .ativa{
+    display: block;
 }
 
 .perguntinha dt{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    gap: 8px;
+}
+
+.perguntinha button{
+    font-family: "Poppins";
     font-size: 18px;
     font-weight: 600;
     position: relative;
+    cursor: pointer;
+    border: none;
+    background: none;
 }
 
-.perguntinha dt::before{
+
+.perguntinha button::before{
     content: "";
     display: inline-block;
     background-color: #ffb60d;
@@ -67,6 +91,24 @@
     left: -20px;
 }
 
+.perguntinha button::after{
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 6px;
+    background: url(../icones/seta-abrir.svg);
+    transition: 0.3s;
+    position: absolute;
+    top: 13px;
+    left: 1100px;
+
+}
+
+.perguntinha button:hover::after, .perguntinha button[aria-expanded="true"]::after{
+    transform: rotate(180deg);
+}
+
 .perguntinha dd{
     color: #2e2e2e;
 }
+

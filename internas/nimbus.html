@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="../css/termos.css">
     <link rel="stylesheet" href="../css/interna.css">
     <link rel="stylesheet" href="../css/seguros.css">
+<link rel="shortcut icon" href="../icones/eletrica.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="conteiner">
-            <img src="../img/bikcraft.svg" alt="Bikcraft">
+            <a href="../home.html"><img src="../img/bikcraft.svg" alt="Bikcraft"></a>
         <nav aria-label="primaria">
             <ul>
                 <li><a href="../bicicletas.html">Bicicletas</a></li>
@@ -30,15 +31,15 @@
         </div>
         <div class="info-content">
             <div class="info-imagens">
-                <img src="../bicicletas/nimbus.jpg" alt="">
-                <img src="../bicicletas/magic.jpg" alt="">
-                <img src="../bicicletas/nebula.jpg" alt="">
+                <img src="../bicicletas/nimbus.jpg" alt="nimbus">
+                <img src="../bicicletas/magic.jpg" alt="magic">
+                <img src="../bicicletas/nebula.jpg" alt="nebula">
             </div>
 
             <div class="info-textos">
                 <p>A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
                 <div class="comprar">
-                    <a href="../orcamento.html">COMPRAR AGORA</a>
+                    <a href="../orcamento.html?tipo=bikcraft&produto=nimbus">COMPRAR AGORA</a>
                     <span class="entre"><img src="../icones/entrega.svg" alt="">entrega em 5 dias</span>
                     <span class="entre"><img src="../icones/estoque.svg" alt="">18 em estoque</span>
                 </div>
@@ -87,16 +88,17 @@
     <article class="menu">
         <h2>escolha a sua<span class="ponto">.</span></h2>
         <div class="slide">
-            <div class="card">
+            <a href="./magic.html"><div class="card">
                 <img src="../bicicletas/magic.jpg" alt="">
                 <h3>Magic Night</h3>
                 <span class="preco">R$ 2499</span>
-            </div>
-            <div class="card">
+            </div></a>
+
+            <a href="./nebula.html"><div class="card">
                 <img src="../bicicletas/nebula.jpg" alt="">
                 <h3>Nebula Cosmic</h3>
                 <span class="preco">R$ 3999</span>
-            </div>
+            </div></a>
         </div>
         
     </article>
@@ -144,5 +146,6 @@
         </div>
     </div>
     </footer>
+    <script src="../js/script.js"></script>
 </body>
 </html>

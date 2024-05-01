@@ -47,6 +47,20 @@ header nav a{
     font-size: 18px;
 }
 
+header nav a:after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    background-color: white;
+    margin-top: 4px;
+    transition: 0.3s;
+}
+
+header nav a:hover:after, header nav a.ativo::after{
+    width: 100%;
+}
+
 header nav ul{
     display: flex;
     gap: 40px;
@@ -139,6 +153,10 @@ header nav ul{
     padding-right: 20px;
     margin-left: auto;
     margin-right: auto;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
 }
 
 .menu .preco{

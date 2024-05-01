@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/animacao.css">
+    <link rel="shortcut icon" href="./icones/eletrica.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <div class="conteiner">
-            <img src="./img/bikcraft.svg" alt="Bikcraft">
+            <a href="./home.html"><img src="./img/bikcraft.svg" alt="Bikcraft"></a>
         <nav aria-label="primaria">
             <ul>
                 <li><a href="./bicicletas.html">Bicicletas</a></li>
@@ -24,11 +26,11 @@
     <main class="principal-bg">
         <div class="principal">
             <div class="principal-conteudo">
-                <h1>Bicicletas feitas sob medida<span class="ponto">.</span></h1>
-                <p>Bicicletas eletricas de alta precisao e qualidade, feitas sob medida para voce. Explore o mundo na sua velocidade com a Bikcraft.</p>
-                <a href="./bicicletas.html">Escolha a sua</a>
+                <h1 class="fadeInDown" data-anime="200">Bicicletas feitas sob medida<span class="ponto">.</span></h1>
+                <p class="fadeInDown" data-anime="400">Bicicletas eletricas de alta precisao e qualidade, feitas sob medida para voce. Explore o mundo na sua velocidade com a Bikcraft.</p>
+                <a class="fadeInDown" data-anime="600" href="./bicicletas.html">Escolha a sua</a>
             </div>
-            <div>
+            <div class="fadeInDown" data-anime="800">
                 <img src="./img/nimbus1.jpg" alt="">
             </div>
         </div>
@@ -37,21 +39,23 @@
     <article class="menu">
         <h2>escolha a sua<span class="ponto">.</span></h2>
         <div class="slide">
-            <div class="card">
+            <a href="./internas/magic.html"><div class="card">
                 <img src="./bicicletas/magic-home.jpg" alt="">
                 <h3>Magic Night</h3>
                 <span class="preco">R$ 2499</span>
-            </div>
-            <div class="card">
+            </div></a>
+            
+            <a href="./internas/nimbus.html"><div class="card">
                 <img src="./bicicletas/nimbus-home.jpg" alt="">
                 <h3>Nimbus Stark</h3>
                 <span class="preco">R$ 4999</span>
-            </div>
-            <div class="card">
+            </div></a>
+            
+            <a href="./internas/nebula.html"><div class="card">
                 <img src="./bicicletas/nebula-home.jpg" alt="">
                 <h3>Nebula Cosmic</h3>
                 <span class="preco">R$ 3999</span>
-            </div>
+            </div></a>
         </div>
         
     </article>
@@ -177,5 +181,8 @@
         </div>
     </div>
     </footer>
+
+    <script src="./js/plugins/simple-anime.js"></script>;
+    <script src="./js/script.js"></script>
 </body>
 </html>
